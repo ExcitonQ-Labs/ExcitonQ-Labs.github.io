@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExcitonQ Labs</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #0a0a0a;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #6c63ff;
+        }
+
+        header h1 {
+            font-size: 3em;
+            background: linear-gradient(to right, #6c63ff, #3f51b5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            color: #aaa;
+            letter-spacing: 3px;
+            margin-top: 10px;
+        }
+
+        .tagline {
+            text-align: center;
+            padding: 40px;
+            background: #111;
+        }
+
+        .tagline h2 {
+            font-size: 1.8em;
+            color: #6c63ff;
+        }
+
+        .tagline p {
+            color: #aaa;
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+
+        .areas {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px;
+            background: #0a0a0a;
+        }
+
+        .card {
+            background: #1a1a2e;
+            border: 1px solid #6c63ff;
+            border-radius: 10px;
+            padding: 30px;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: #6c63ff;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #aaa;
+            font-size: 0.9em;
+        }
+
+        .research {
+            padding: 40px;
+            background: #111;
+            text-align: center;
+        }
+
+        .research h2 {
+            color: #6c63ff;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        th {
+            background: #6c63ff;
+            padding: 12px;
+            color: white;
+        }
+
+        td {
+            padding: 12px;
+            border: 1px solid #333;
+            color: #aaa;
+            text-align: center;
+        }
+
+        tr:hover {
+            background: #1a1a2e;
+        }
+
+        .founder {
+            padding: 40px;
+            background: #0a0a0a;
+            text-align: center;
+        }
+
+        .founder h2 {
+            color: #6c63ff;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .founder p {
+            color: #aaa;
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #1a1a2e;
+            text-align: center;
+            padding: 20px;
+            color: #aaa;
+            border-top: 2px solid #6c63ff;
+        }
+
+        footer a {
+            color: #6c63ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ExcitonQ Labs</h1>
+        <p>COMPUTING THE FUTURE OF MATTER</p>
+    </header>
+
+    <div class="tagline">
+        <h2>Where Quantum Meets Materials</h2>
+        <p>Using computational chemistry and quantum computing to design next generation materials</p>
+    </div>
+
+    <div class="areas">
+        <div class="card">
+            <h3>🔬 Materials</h3>
+            <p>DFT calculations of novel materials</p>
+        </div>
+        <div class="card">
+            <h3>💡 OLED</h3>
+            <p>Designing next gen OLED emitters</p>
+        </div>
+        <div class="card">
+            <h3>⚡ Energy</h3>
+            <p>Solar cells and battery materials</p>
+        </div>
+        <div class="card">
+            <h3>⚛️ Quantum</h3>
+            <p>Quantum computing for chemistry</p>
+        </div>
+        <div class="card">
+            <h3>🤖 AI</h3>
+            <p>ML models for material prediction</p>
+        </div>
+    </div>
+
+    <div class="research">
+        <h2>Our Research</h2>
+        <table>
+            <tr>
+                <th>Molecule</th>
+                <th>Formula</th>
+                <th>HOMO (eV)</th>
+                <th>LUMO (eV)</th>
+                <th>Gap (eV)</th>
+                <th>Application</th>
+            </tr>
+            <tr>
+                <td>Naphthalene</td>
+                <td>C10H8</td>
+                <td>-5.600</td>
+                <td>-4.114</td>
+                <td>1.485</td>
+                <td>Infrared</td>
+            </tr>
+            <tr>
+                <td>Anthracene</td>
+                <td>C14H10</td>
+                <td>-5.224</td>
+                <td>-1.780</td>
+                <td>3.445</td>
+                <td>Blue OLED</td>
+            </tr>
+            <tr>
+                <td>Carbazole</td>
+                <td>C12H9N</td>
+                <td>-2.829</td>
+                <td>-1.459</td>
+                <td>1.370</td>
+                <td>Host Material</td>
+            </tr>
+            <tr>
+                <td>Pyrene</td>
+                <td>C16H10</td>
+                <td>-4.590</td>
+                <td>-3.744</td>
+                <td>0.845</td>
+                <td>Blue Emitter</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="founder">
+        <h2>Founder</h2>
+        <p>
+            <strong style="color: #6c63ff;">Nitin</strong><br>
+            BS-MS Chemistry Student, CUTN<br>
+            Computational Chemistry | Quantum Computing | AI<br><br>
+            Passionate about using quantum computing and DFT 
+            to accelerate materials discovery for OLED, 
+            solar cells, and next generation semiconductors.
+        </p>
+    </div>
+
+    <footer>
+        <p>© 2026 ExcitonQ Labs | 
+        <a href="https://github.com/ExcitonQ-Labs">GitHub</a> | 
+        <a href="mailto:excitonqlabs@gmail.com">Contact</a></p>
+    </footer>
+
+</body>
+</html>
